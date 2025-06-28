@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Bank Management System</h1>
+
+    <div class="form">
+      <input type="text" id="accountNumber" placeholder="Account Number" />
+      <input type="text" id="name" placeholder="Name" />
+       <input type="text" id="email" placeholder="Email" />
+      <input type="text" id="type" placeholder="Type" />
+      <input type="number" id="balance" placeholder="Balance" />
+      <input type="text" id="branch" placeholder="Branch" />
+      <button onclick="addAccount()">Add Account</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Account No</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Type</th>
+          <th>Balance</th>
+          <th>Branch</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="accountsTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
