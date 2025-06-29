@@ -8,33 +8,39 @@
 </head>
 <body>
   <div class="container">
-    <h1>Bank Management System</h1>
+    <h1>🏦 Bank Management System</h1>
 
-    <div class="form">
-      <input type="text" id="accountNumber" placeholder="Account Number" />
-      <input type="text" id="name" placeholder="Name" />
-       <input type="text" id="email" placeholder="Email" />
-      <input type="text" id="type" placeholder="Type" />
-      <input type="number" id="balance" placeholder="Balance" />
-      <input type="text" id="branch" placeholder="Branch" />
-      <button onclick="addAccount()">Add Account</button>
+    <div class="form-card">
+      <h2>Add New Account</h2>
+      <div class="form-grid">
+        <input type="text" id="accountNumber" placeholder="Account Number" />
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="text" id="type" placeholder="Account Type" />
+        <input type="number" id="balance" placeholder="Balance" />
+        <input type="text" id="branch" placeholder="Branch" />
+      </div>
+      <button class="btn-add" onclick="addAccount()">➕ Add Account</button>
     </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Account No</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Type</th>
-          <th>Balance</th>
-          <th>Branch</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody id="accountsTable"></tbody>
-    </table>
+    <div class="table-container">
+      <h2>Accounts List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Account No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>Branch</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="accountsTable"></tbody>
+      </table>
+    </div>
   </div>
 
   <script src="script.js"></script>
